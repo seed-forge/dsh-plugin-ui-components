@@ -1,0 +1,38 @@
+{
+  "namespace": "team",
+  "id": "dsh-plugin-ui-components",
+  "name": "DSH Plugin UI Components",
+  "owner": "team",
+  "version": "0.1.0",
+  "status": "trial",
+  "entry": "README.md",
+  "package_type": "plugin",
+  "tags": ["dsh", "react", "ui", "components", "workbench"],
+  "summary": "Host-aware React component library for DSH Web plugins.",
+  "compatible_clients": ["dsh"],
+  "installation": {
+    "default_scope": "project",
+    "install_mode": "npm_dependency"
+  },
+  "dependencies": [],
+  "companion_docs": {
+    "example_required": true
+  },
+  "environment": {
+    "dependency_groups": [],
+    "system": [
+      {"name": "node", "command": "node --version"},
+      {"name": "pnpm", "command": "pnpm --version"}
+    ],
+    "python_strategy": "none",
+    "python_packages": [],
+    "fonts": [],
+    "verify_commands": ["pnpm run typecheck", "pnpm test", "pnpm run release:check"]
+  },
+  "runtime_requirements": ["React >=18 <20", "DSH Web plugin build"],
+  "post_install_hints": [
+    "Import the package as a normal build dependency; do not run dsh plugin install for this library.",
+    "Use the included dsh-status-dock example to validate a host integration."
+  ],
+  "updated_at": "2026-08-28"
+}

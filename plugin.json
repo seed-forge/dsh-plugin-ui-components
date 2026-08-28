@@ -1,0 +1,26 @@
+{
+  "id": "dsh-plugin-ui-components",
+  "name": "DSH Plugin UI Components",
+  "namespace": "team",
+  "version": "0.1.0",
+  "status": "trial",
+  "description": "Host-aware React compound components and contracts for DSH Web plugins.",
+  "summary": "A DSH-governed npm UI component library, not a mountable DSH bundle.",
+  "package_type": "plugin",
+  "hosts": ["dsh"],
+  "dsh": {
+    "library": {
+      "npm_name": "@seed-forge/dsh-plugin-ui-components",
+      "entrypoints": [".", "./contracts", "./registry", "./tokens", "./styles"],
+      "release_command": "pnpm run release:check"
+    }
+  },
+  "tags": ["dsh", "react", "ui", "components", "npm-library"],
+  "compatible_clients": ["dsh"],
+  "installation": {
+    "default_scope": "project",
+    "install_mode": "npm_dependency"
+  },
+  "runtime_requirements": ["React >=18 <20", "DSH Web plugin build"],
+  "updated_at": "2026-08-28"
+}
