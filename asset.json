@@ -16,6 +16,8 @@
   },
   "dependencies": [],
   "companion_docs": {
+    "usage": "USAGE.md",
+    "example": "EXAMPLE.md",
     "example_required": true
   },
   "environment": {

@@ -78,6 +78,9 @@ panel through public DSH APIs, and materializing this dependency into its browse
 client at build time. See [`examples/dsh-status-dock`](./examples/dsh-status-dock)
 for a minimal proof-bundle fixture.
 
+For a concise integration sequence, see [USAGE.md](./USAGE.md). The fixture
+walkthrough is in [EXAMPLE.md](./EXAMPLE.md).
+
 ## Security
 
 Do not pass arbitrary URLs to artifact components. `SafePreview` and

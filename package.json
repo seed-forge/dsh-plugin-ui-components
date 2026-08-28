@@ -59,6 +59,8 @@
     "dist",
     "README.md",
     "README.zh-CN.md",
+    "USAGE.md",
+    "EXAMPLE.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
